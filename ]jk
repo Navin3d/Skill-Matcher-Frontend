@@ -1,0 +1,15 @@
+import { HStack, Flex, Button } from '@chakra-ui/react'
+import _ from 'lodash'
+
+const Pagination = ({ itemsCount, pageSize, onPageChange, currentPage }) => {
+  const pagesCount = Math.ceil(itemsCount / pageSize);
+  const pages = _.range(1, pagesCount + 1);
+
+  if (pagesCount === 1) return null;
+
+  return <HStack>
+      {pages?.map(page => <Button key={page} type='button' variant={currentPage !== page ? 'outline' : ''} onClick={() => onPageChange(page)}>{page}</Button>)}
+    </HStack>
+}
+
+export default Pagination

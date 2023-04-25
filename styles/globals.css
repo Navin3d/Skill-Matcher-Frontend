@@ -1,0 +1,80 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#hamburger {
+  display: none;
+}
+
+#mainLogout {
+  /* display: none; */
+}
+
+#myAccountMobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  /* #myAccountDesktop {
+    display: none;
+  } */
+
+  /* #myAccountMobile {
+    display: flex;
+  } */
+
+  #mainLogout {
+    display: none;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  #hamburger {
+    display: unset;
+  }
+
+  /* #headerFlex {
+    justify-content: flex-start;
+  } */
+}
+
+.aws-btn {
+  --slider-height-percentage: 13%;
+  --slider-transition-duration: 262ms;
+  --organic-arrow-thickness: 6px;
+  --organic-arrow-border-radius: 0px;
+  --organic-arrow-height: 19px;
+  --organic-arrow-color: #26456f;
+  --control-button-width: 10%;
+  --control-button-height: 25%;
+  --control-button-background: transparent;
+  --control-bullet-color: #62a4fa;
+  --control-bullet-active-color: #538bd5;
+  --loader-bar-color: #851515;
+  --loader-bar-height: 6px;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
